@@ -1,6 +1,7 @@
 node_modules
 certificates
 .env
+.DS_Store
 
 
 Readme2.md
