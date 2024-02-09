@@ -14,7 +14,7 @@ openssl pkcs12 -export -out keyStore.p12 -inkey private.pem -in public.cer
 ## Import PKCS#12 (P12) File to HSM
 
 ```bash
-/home/node/app/x86-64-2/Administration/p11tool2 Slot=1 LoginUser=mock123 \
+/home/node/app/Utimaco/Administration/p11tool2 Slot=1 LoginUser=mock123 \
 CertAttr=CKA_LABEL="ITMX Cert",CKA_ID=P12 \
 PubKeyAttr=CKA_LABEL="ITMX Public Key",CKA_ID=P12 \
 PrvKeyAttr=CKA_LABEL="ITMX Private Key",CKA_ID=P12,CKA_SIGN=CK_TRUE \
@@ -22,7 +22,7 @@ ImportP12=/home/node/app/certificates/004/keyStore.p12,ask
 
 # or
 
-/home/node/app/x86-64-2/Administration/p11tool2 Slot=1 LoginUser=mock123 \
+/home/node/app/Utimaco/Administration/p11tool2 Slot=1 LoginUser=mock123 \
 CertAttr=CKA_LABEL="ITMX Cert",CKA_ID=P12 \
 PrvKeyAttr=CKA_LABEL="ITMX Private Key",CKA_ID=P12,CKA_SIGN=CK_TRUE \
 ImportP12=/home/node/app/certificates/004/keyStore.p12,ask
@@ -31,7 +31,7 @@ ImportP12=/home/node/app/certificates/004/keyStore.p12,ask
 when excute ListObject i got 3 object following command
 
 ```bash
-/home/node/app/x86-64-2/Administration/p11tool2 Slot=1 LoginUser=mock123 ListObjects
+/home/node/app/Utimaco/Administration/p11tool2 Slot=1 LoginUser=mock123 ListObjects
 ```
 
 - 1 CKO_CERTIFICATE

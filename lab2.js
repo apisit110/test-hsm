@@ -256,7 +256,7 @@ const signingByCommand = async (plainTextData) => {
     password: hsmConfig.PIN,
     spec: hsmConfig.SPEC, // cxitool ListKeys
 
-    pathToAdministration: path.join(homePath, 'x86-64-2', 'Administration'),
+    pathToAdministration: path.join(homePath, 'Utimaco', 'Administration'),
     pathToHsmFolder: path.join(homePath, 'hsm'),
     pathToMessageFile: path.join(homePath, 'hsm', `${_random}-message.txt`),
     pathToSignatureBinaryFile: path.join(homePath, 'hsm', `${_random}-signature.sig`),
@@ -351,12 +351,12 @@ const signingByCommand = async (plainTextData) => {
 //      * Encryting and decryption
 //      */
 //     // const encryptedMessage = encrypting(
-//     //   "/home/node/app/x86-64-2/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so",
+//     //   "/home/node/app/Utimaco/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so",
 //     //   plainTextData
 //     // )
 //     // if (encryptedMessage) {
 //     //   const decryptedMessage = decrypting(
-//     //     "/home/node/app/x86-64-2/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so",
+//     //     "/home/node/app/Utimaco/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so",
 //     //     encryptedMessage
 //     //   )
 
@@ -380,17 +380,17 @@ const signingByCommand = async (plainTextData) => {
 //      * Signing and verifying
 //      */
 //     // const signature = signing(
-//     //   '/home/node/app/x86-64-2/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so',
+//     //   '/home/node/app/Utimaco/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so',
 //     //   plainTextData,
 //     // )
 //     // const digest = getDigest(
-//     //   '/home/node/app/x86-64-2/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so',
+//     //   '/home/node/app/Utimaco/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so',
 //     //   Buffer.from(plainTextData)
 //     // )
 //     // console.log({ digest })
 //     // if (signature) {
 //     //   // const isVerify = verifying(
-//     //   //   '/home/node/app/x86-64-2/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so',
+//     //   //   '/home/node/app/Utimaco/Crypto_APIs/PKCS11_R3/lib/libcs_pkcs11_R3.so',
 //     //   //   plainTextData,
 //     //   //   signature,
 //     //   // )
